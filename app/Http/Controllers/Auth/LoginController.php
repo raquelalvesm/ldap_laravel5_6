@@ -7,6 +7,12 @@ use Illuminate\Support\Facades\Auth;
 use Adldap\Laravel\Facades\Adldap;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use App\Http\Requests\RegisterAuthRequest;
+use App\User;
+use JWTAuth;
+use Tymon\JWTAuth\Exceptions\JWTException;
+
+
 
 class LoginController extends Controller
 {
@@ -157,5 +163,7 @@ class LoginController extends Controller
         $property->setAccessible(true);
         return $property->getValue($obj);
     }
-
+    
+  
 }
+

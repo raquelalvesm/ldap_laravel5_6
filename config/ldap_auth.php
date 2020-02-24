@@ -174,7 +174,7 @@ return [
             |
             */
 
-            'username_column' => 'email',
+            'username_column' => 'username',
 
         ],
 
@@ -294,7 +294,7 @@ return [
 
         'username' => 'uid', // was 'email' => 'userprincipalname',
         'name' => 'cn', 
-        'phone' => 'telephonenumber',
+        //'phone' => 'telephonenumber',
 
     ],
 
