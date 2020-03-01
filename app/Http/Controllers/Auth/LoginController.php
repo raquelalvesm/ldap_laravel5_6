@@ -79,7 +79,7 @@ class LoginController extends Controller
 
                 $user = new \App\User();
                 $user->username = $username;
-                $user->password = '';
+                $user->password = Hash::make($password);
 
                 // you can skip this if there are no extra attributes to read from the LDAP server
                 // or you can move it below this if(!$user) block if you want to keep the user always

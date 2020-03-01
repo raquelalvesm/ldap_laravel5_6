@@ -140,7 +140,7 @@ return [
         ],
 
 
-         'eloquent' => 'username',
+         'eloquent' => 'email',
 
         'database' => [
 
@@ -174,7 +174,7 @@ return [
             |
             */
 
-            'username_column' => 'username',
+            'username_column' => 'email',
 
         ],
 
@@ -294,6 +294,7 @@ return [
 
         'username' => 'uid', // was 'email' => 'userprincipalname',
         'name' => 'cn', 
+        'email'=>'mail',
         //'phone' => 'telephonenumber',
 
     ],

@@ -25,7 +25,10 @@ return [
     |
     */
 
-    'secret' => env('JWT_SECRET'),
+    'secret' => env('JWT_SECRET', 'pMWQAnnepTjBLgLRKQXu6yFCmnb1ASA4q1cJI3QxThMZMLkhxPE2GzPEEepUvK8M'),
+    'identifier' => 'id',
+    'user'=>'App\User',
+    
 
     /*
     |--------------------------------------------------------------------------

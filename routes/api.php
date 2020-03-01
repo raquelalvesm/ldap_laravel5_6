@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Http\Request;
-
+use App\Http\Resources\UserCollection;
+use App\User;
+use App\Http\Resources\User as UserResource;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -28,20 +30,15 @@ Route::get('/ldap-search',function(Request $request){
     }
 });
 
+Route::post('auth', 'UserController@authenticate');
+Route::post('refresh', 'UserController@refresh');
 Route::post('register', 'UserController@register');
-Route::post('login', 'UserController@authenticate');
-Route::get('open', 'DataController@open');
-
-Route::group(['middleware' => ['jwt.verify']], function() {
-    Route::get('user', 'UserController@getAuthenticatedUser');
-    Route::get('closed', 'DataController@closed');
-});
+Route::post('auth/logout', 'UserControllerApi\AuthController@logout');
 
 
-Route::get('/bd', function(Request $request){
-   
-    $comments =  DB::table('users')
-    ->where($request->get('username'));
-    return response()->json(['response' => 'success', 'comments' => $comments]);
 
+
+Route::get('/users', function () {
+    return new UserCollection(User::paginate());
+    
 });
