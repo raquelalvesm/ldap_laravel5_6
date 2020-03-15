@@ -295,7 +295,7 @@ return [
         'username' => 'uid', // was 'email' => 'userprincipalname',
         'name' => 'cn', 
         'email'=>'mail',
-        //'phone' => 'telephonenumber',
+        'phone' => 'telephonenumber',
 
     ],
 

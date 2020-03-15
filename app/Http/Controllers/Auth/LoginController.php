@@ -8,9 +8,7 @@ use Adldap\Laravel\Facades\Adldap;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use App\Http\Requests\RegisterAuthRequest;
-use App\User;
-use JWTAuth;
-use Tymon\JWTAuth\Exceptions\JWTException;
+
 
 
 
@@ -49,23 +47,25 @@ class LoginController extends Controller
     {
         return config('ldap_auth.usernames.eloquent');
     }
-
+/* 
     protected function validateLogin(Request $request)
     {
         $this->validate($request, [
             $this->username() => 'required|string|regex:/^\w+$/',
             'password' => 'required|string',
         ]);
-    }
+    } */
 
     protected function attemptLogin(Request $request)
     {
         $credentials = $request->only($this->username(), 'password');
         $username = $credentials[$this->username()];
         $password = $credentials['password'];
+        
 
         $user_format = env('LDAP_USER_FORMAT', 'cn=%s,'.env('LDAP_BASE_DN', ''));
         $userdn = sprintf($user_format, $username);
+        
 
         // you might need this, as reported in
         // [#14](https://github.com/jotaelesalinas/laravel-simple-ldap-auth/issues/14):
