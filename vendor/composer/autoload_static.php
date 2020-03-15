@@ -101,6 +101,10 @@ class ComposerStaticInit77f4df84979dc1555cdbd32c489063a1
             'Lcobucci\\JWT\\' => 13,
             'Laravel\\Tinker\\' => 15,
         ),
+        'K' => 
+        array (
+            'KeycloakGuard\\' => 14,
+        ),
         'J' => 
         array (
             'JakubOnderka\\PhpConsoleHighlighter\\' => 35,
@@ -112,6 +116,7 @@ class ComposerStaticInit77f4df84979dc1555cdbd32c489063a1
         ),
         'F' => 
         array (
+            'Firebase\\JWT\\' => 13,
             'Fideloper\\Proxy\\' => 16,
             'Faker\\' => 6,
         ),
@@ -323,6 +328,10 @@ class ComposerStaticInit77f4df84979dc1555cdbd32c489063a1
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
         ),
+        'KeycloakGuard\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/robsontenorio/laravel-keycloak-guard/src',
+        ),
         'JakubOnderka\\PhpConsoleHighlighter\\' => 
         array (
             0 => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src',
@@ -334,6 +343,10 @@ class ComposerStaticInit77f4df84979dc1555cdbd32c489063a1
         'Illuminate\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
+        ),
+        'Firebase\\JWT\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
         ),
         'Fideloper\\Proxy\\' => 
         array (
@@ -1153,6 +1166,10 @@ class ComposerStaticInit77f4df84979dc1555cdbd32c489063a1
         'Faker\\ValidGenerator' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/ValidGenerator.php',
         'Fideloper\\Proxy\\TrustProxies' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustProxies.php',
         'Fideloper\\Proxy\\TrustedProxyServiceProvider' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustedProxyServiceProvider.php',
+        'Firebase\\JWT\\BeforeValidException' => __DIR__ . '/..' . '/firebase/php-jwt/src/BeforeValidException.php',
+        'Firebase\\JWT\\ExpiredException' => __DIR__ . '/..' . '/firebase/php-jwt/src/ExpiredException.php',
+        'Firebase\\JWT\\JWT' => __DIR__ . '/..' . '/firebase/php-jwt/src/JWT.php',
+        'Firebase\\JWT\\SignatureInvalidException' => __DIR__ . '/..' . '/firebase/php-jwt/src/SignatureInvalidException.php',
         'Hamcrest\\Arrays\\IsArray' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArray.php',
         'Hamcrest\\Arrays\\IsArrayContaining' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContaining.php',
         'Hamcrest\\Arrays\\IsArrayContainingInAnyOrder' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContainingInAnyOrder.php',
@@ -2013,6 +2030,13 @@ class ComposerStaticInit77f4df84979dc1555cdbd32c489063a1
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/Highlighter.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'KeycloakGuard\\Exceptions\\KeycloakGuardException' => __DIR__ . '/..' . '/robsontenorio/laravel-keycloak-guard/src/Exceptions/KeycloakGuardException.php',
+        'KeycloakGuard\\Exceptions\\ResourceAccessNotAllowedException' => __DIR__ . '/..' . '/robsontenorio/laravel-keycloak-guard/src/Exceptions/ResourceAccessNotAllowedException.php',
+        'KeycloakGuard\\Exceptions\\TokenException' => __DIR__ . '/..' . '/robsontenorio/laravel-keycloak-guard/src/Exceptions/TokenException.php',
+        'KeycloakGuard\\Exceptions\\UserNotFoundException' => __DIR__ . '/..' . '/robsontenorio/laravel-keycloak-guard/src/Exceptions/UserNotFoundException.php',
+        'KeycloakGuard\\KeycloakGuard' => __DIR__ . '/..' . '/robsontenorio/laravel-keycloak-guard/src/KeycloakGuard.php',
+        'KeycloakGuard\\KeycloakGuardServiceProvider' => __DIR__ . '/..' . '/robsontenorio/laravel-keycloak-guard/src/KeycloakGuardServiceProvider.php',
+        'KeycloakGuard\\Token' => __DIR__ . '/..' . '/robsontenorio/laravel-keycloak-guard/src/Token.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
