@@ -35,12 +35,12 @@ Route::post('refresh', 'UserController@refresh');
 Route::post('register', 'UserController@register');
 Route::post('auth/logout', 'UserControllerApi\AuthController@logout');
 
-Route::get('user', 'UserController@user');
+//Route::get('user', 'UserController@user');
 
-Route::group(['prefix' => 'auth', 'middleware' => 'jwt.auth'], function () {
+Route::group(['middleware' => ['jwt.verify']], function(){
 
-    Route::get('user', 'AuthController@user');
-    Route::post('logout', 'AuthController@logout');
+    Route::get('user', 'UserController@user');
+    Route::post('logout', 'UserController@logout');
 
 });
 
